@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jolly Lodger:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inknut Antiqua:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Italianno:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Istok Web:ital,wght@1,700&display=swap"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+      #factDisplay {
+        position: absolute;
+        top: 360px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        font-family: 'JetBrains Mono';
+        color: #ffa500;
+        width: 60%;
+        padding: 20px;
+        border-radius: 25px;
+        background-color: rgba(91, 39, 85, 0.6);
+        text-align: center;
+      }
+      button {
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        background-color: #996a14;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        background-color: #8c5726;
+      }
+    </style>
+    <script>
+      function showRandomFact() {
+        var facts = [
+          "The first helicopter flight was made by Paul Cornu in 1907.",
+          "Helicopters can hover in place due to their ability to generate lift in a controlled manner.",
+          "The largest helicopter ever built is the Mil Mi-26, which can carry up to 20 tons of cargo.",
+          "Helicopters are used in emergency medical services to reach patients quickly in difficult terrain.",
+          "The rotor blades of a helicopter are designed to be much more flexible than they appear.",
+          "A helicopter's tail rotor is crucial for counteracting the torque produced by the main rotor.",
+          "The world's fastest helicopter is the Sikorsky X2, reaching speeds of over 250 mph.",
+          "Helicopters have been used in military operations since World War II.",
+          "The Osprey is a unique aircraft that combines the vertical flight capabilities of a helicopter with the speed of a fixed-wing plane.",
+          "Helicopter pilots often undergo rigorous training to handle various flying conditions and emergencies.",
+          "The Robinson R22 is a popular light helicopter known for its affordability and efficiency.",
+          "Helicopters are used for search and rescue missions due to their ability to access remote or difficult areas.",
+          "The Boeing CH-47 Chinook is known for its twin-rotor design and is used for heavy-lift operations.",
+          "In addition to transportation, helicopters are used in aerial firefighting and crop dusting.",
+          "The Bell 206 JetRanger is a well-known helicopter used in both commercial and private settings.",
+          "Helicopters can be used for surveying and inspecting infrastructure, such as power lines and pipelines.",
+          "The Airbus H130 is renowned for its quiet operation and advanced technology.",
+          "Helicopters have been featured in numerous movies and television shows due to their unique capabilities.",
+          "The AgustaWestland AW139 is a versatile helicopter used for both civilian and military applications.",
+          "Helicopters have a wide range of uses, from law enforcement to tourism, showcasing their versatility."
+        ];
+        var randomIndex = Math.floor(Math.random() * 20);
+        document.getElementById('factDisplay').innerText = facts[randomIndex];
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      style="
+        width: 1440px;
+        background-color: #fff;
+        max-width: 100%;
+        height: 984px;
+        overflow: hidden;
+        text-align: left;
+        font-size: 96px;
+        color: #996a14;
+        font-family: 'Jolly Lodger';
+      "
+    >
+      <img
+        style="
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 1440px;
+          height: 1024px;
+          object-fit: cover;
+        "
+        alt=""
+        src="background.jpg"
+      />
+
+      <div
+        style="
+          position: absolute;
+          top: 129px;
+          left: 1009px;
+          text-align: center;
+          display: inline-block;
+          width: 291px;
+          height: 97px;
+          text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+          mix-blend-mode: multiply;
+        "
+      >
+        SkyLuxe
+      </div>
+      <div
+        style="position: sticky;">
+      <div
+        style="
+          position:absolute;
+          top: 0px;
+          left: 0px;
+          background-color: #150614;
+          width: 1440px;
+          height: 100px;
+          opacity: 0.5;
+        "
+      ></div>
+      <a href="galleria.html">
+      <img
+        style="
+          position: absolute;
+          top: 30px;
+          left: 952px;
+          width: 57px;
+          height: 53px;
+          opacity: 50%;
+          border-radius: 50%;
+        "
+        alt=""
+        src="gallery.jpeg"
+      /></a>
+
+      <a href="bookings.html"><img
+        style="
+          position: absolute;
+          top: 30px;
+          left: 720px;
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          opacity: 50%;
+          border-radius: 50%;
+        "
+        alt=""
+        src="pin.jpeg"
+      /></a>
+
+     <a href="contactUs.html"><img
+        style="
+          position: absolute;
+          top: 30px;
+          left: 542px;
+          width: 63px;
+          height: 44px;
+          overflow: hidden;
+          border-radius: 50%;
+        "
+        alt=""
+        src="call.png"
+      /></a>
+
+      <img
+        style="
+          position: absolute;
+          top: 32px;
+          left: 342px;
+          width: 48px;
+          height: 48px;
+          overflow: hidden;
+          border-radius: 50%;
+          opacity:50%;
+        "
+        alt=""
+        src="home.jpg"
+      />
+
+      <img
+        style="
+          position: absolute;
+          top: 20px;
+          left: 11px;
+          border-radius: 421px;
+          width: 70px;
+          height: 64.1px;
+          object-fit: contain;
+        "
+        alt=""
+        src="skyluxeLogo.jpg"
+      /></div>
+
+      <div
+        style="
+          position: absolute;
+          top: 400px;
+          left: 0px;
+          border-radius: 59px;
+          background-color: rgba(91, 39, 85, 0.43);
+          width: 1440px;
+          height: 393px;
+          opacity: 0.5;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          top: 450px;
+          left: 11px;
+          font-size: 48px;
+          color: #fff;
+          display: inline-block;
+          width: 173px;
+          height: 63px;
+        "
+      >
+        About Us:-
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 550px;
+          left: 0px;
+          font-size: 30px;
+          font-family: 'JetBrains Mono';
+          color: #ffa500;
+          display: inline-block;
+          width: 1398px;
+          height: 282px;
+        "
+      >
+        SkyLuxe, based in New York, is your premier helicopter charter service
+        for luxury and premium air travel. We offer interstate, intercity, and select interborder flights, ensuring seamless travel experiences. With a
+        strong presence across America and sub-operations in Europe and Latin
+        America, we are committed to providing unparalleled comfort, safety, and
+        efficiency. Discover the ultimate in helicopter travel with SkyLuxe.
+      </div>
+      <button onclick="showRandomFact()">Facts about Helicopters</button>
+      <div id="factDisplay">Click the button to see a helicopter fact!</div>
+    </div>
+  </body>
+</html>
+
